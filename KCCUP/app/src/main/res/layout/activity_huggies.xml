@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guiab.kccup.Huggies"
+    android:background="@drawable/huggies1">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Selecione a linha de produtos Huggies"
+        android:textSize="30sp"
+        android:background="@color/vermelho"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/aladin"/>
+
+    <Button
+        android:id="@+id/btnFralda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="154dp"
+        android:text="Fralda"
+        android:background="@color/vermelho1"
+        android:textColor="@color/branco"
+        android:fontFamily="@font/aladin"
+        android:textSize="17sp"/>
+
+    <Button
+        android:id="@+id/btnTroca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="155dp"
+        android:text="Troca"
+        android:background="@color/vermelho1"
+        android:textColor="@color/branco"
+        android:fontFamily="@font/aladin"
+        android:textSize="17sp"/>
+
+    <Button
+        android:id="@+id/btnBanho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Banho"
+        android:background="@color/vermelho1"
+        android:textColor="@color/branco"
+        android:fontFamily="@font/aladin"
+        android:textSize="17sp"/>
+
+</RelativeLayout>

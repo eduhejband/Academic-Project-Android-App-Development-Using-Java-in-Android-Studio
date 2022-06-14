@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HuggiesBanho"
+    android:orientation="vertical"
+    android:background="@drawable/huggies1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Qual o tipo de produto procurado?"
+        android:textSize="22sp"
+        android:background="@color/vermelho"
+        android:fontFamily="@font/aladin"
+        android:textColor="@color/colorAccent"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/banhoShampoo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shampoo"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/banhoCondicionador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Condicionador"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/banhoShampooCondicionador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shampoo e condicionador"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/banhoSabonete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sabonete"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Qual a sua idade?"
+        android:textSize="22sp"
+        android:background="@color/vermelho"
+        android:fontFamily="@font/aladin"
+        android:textColor="@color/colorAccent"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/menos30HuggiesBanho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menos que 30 anos"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/de30a40HuggiesBanho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 a 40"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/de40a50HuggiesBanho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40 a 50"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/de50a60HuggiesBanho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50 a 60"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+        android:id="@+id/mais60HuggiesBanho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mais que 60 anos"
+        android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" O usuário toma banho de banheira?"
+        android:textSize="22sp"
+        android:background="@color/vermelho"
+        android:fontFamily="@font/aladin"
+        android:textColor="@color/colorAccent"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/banheiraSim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sim"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/banheiraNao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text=" Qual a sua prioridade?"
+        android:background="@color/vermelho"
+        android:fontFamily="@font/aladin"
+        android:textColor="@color/colorAccent"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/prioridadeAroma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aromatização"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/prioridadeSuave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suavidade"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/prioridade100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produto psrs os 100 primeiros dias"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/prioridadeCacho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produtos para cabelos cacheados"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <Button
+        android:text="Resultado"
+        android:id="@+id/btnResultadoHuggiesBanho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/vermelho1"
+        android:fontFamily="@font/aladin"
+        android:textColor="@color/branco"
+        android:textSize="15sp"/>
+
+</LinearLayout>

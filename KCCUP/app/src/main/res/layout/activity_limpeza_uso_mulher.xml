@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guiab.kccup.LimpezaUsoMulher"
+    android:orientation="vertical"
+    android:background="@drawable/cor1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:gravity="center"
+        android:text="O produto será para limpeza ou para uso?"
+        android:textSize="24sp"
+        android:fontFamily="@font/aladin"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/btnUso"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="254dp"
+        android:background="@color/azul1"
+        android:text="Uso"
+        android:textColor="@color/branco"
+        android:fontFamily="@font/aladin"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnLimpeza"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="179dp"
+        android:background="@color/azul1"
+        android:text="Limpeza"
+        android:textColor="@color/branco"
+        android:fontFamily="@font/aladin"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

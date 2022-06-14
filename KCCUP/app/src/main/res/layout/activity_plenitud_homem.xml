@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guiab.kccup.PlenitudHomem"
+    android:orientation="vertical"
+    android:background="@drawable/cor1">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/azul2"
+        android:text=" Qual a sua prioridade?"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:fontFamily="@font/aladin"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/maiorInc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maior incontinência"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/maiorMob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maior mobilidade"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Qual a idade do usuário?"
+        android:textSize="24sp"
+        android:background="@color/azul2"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/aladin"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/menos30Homem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menos que 30 anos"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/de30a40Homem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="de 30 a 40"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/de40a50Homem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="de 40 a 50"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/de50a60Homem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="de 50 a 60"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/mais60Homem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mais que 60 anos"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Qual o tipo de tecnologia desejada"
+        android:textSize="24sp"
+        android:background="@color/azul2"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/aladin"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/realFit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Real Fit"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/protectPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Protect Plus"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" O produto é para você ou para terceiros?"
+        android:textSize="24sp"
+        android:background="@color/azul2"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/aladin"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/paraMimHomem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Para mim"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/paraTerceirosHomem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Para terceiros"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\n\n\n\nButton" />
+
+    <Button
+        android:id="@+id/btnResultadoHomem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/azul1"
+        android:fontFamily="@font/aladin"
+        android:text="Resultado"
+        android:textColor="@color/branco"
+        android:textSize="17sp" />
+
+
+
+</LinearLayout>

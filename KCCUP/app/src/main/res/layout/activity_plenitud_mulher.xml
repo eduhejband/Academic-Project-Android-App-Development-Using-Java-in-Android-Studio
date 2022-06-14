@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guiab.kccup.PlenitudMulher"
+    android:background="@drawable/cor1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Qual o tipo de absorção procurada?"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:background="@color/azul2"
+        android:fontFamily="@font/aladin"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/absBaixa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baixa"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/absMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Média"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/absAlta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alta"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/absNoturna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noturna"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Qual a idade do usuário?"
+        android:textSize="23sp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/azul2"
+        android:fontFamily="@font/aladin"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/menos30Mulher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menos que 30 anos"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/de30a40Mulher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 a 40"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/de40a50Mulher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40 a 50"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/de50a60Mulher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50 a 60"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/mais60Mulher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mais que 60 anos"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Qual a sua prioridade?"
+            android:textSize="23sp" android:textColor="@color/colorAccent"
+            android:background="@color/azul2"
+            android:fontFamily="@font/aladin"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/maxDiscrição"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Máxima discrição"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/confeDiscrição"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conforto e discrição na medida"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/segeDiscrição"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Segurança e descrição"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/todaProteção"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toda a proteção"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" O porduto é para você ou para terceiros?"
+            android:textSize="23sp"
+            android:textColor="@color/colorAccent"
+            android:background="@color/azul2"
+            android:fontFamily="@font/aladin"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/paraMimMulher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Para mim"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/paraTerceirosMulher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Para terceiros"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnResultadoMulher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/azul1"
+                android:text="Resultado"
+                android:textSize="18sp"
+                android:textColor="@color/branco"
+                android:fontFamily="@font/aladin"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

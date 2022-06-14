@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HuggiesTroca"
+    android:orientation="vertical"
+    android:background="@drawable/huggies1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" O que você procura?"
+        android:textSize="22sp"
+        android:background="@color/vermelho"
+        android:fontFamily="@font/aladin"
+        android:textColor="@color/colorAccent"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/prevencao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prevenção de assaduras"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/hidratacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hidratação"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/ambos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ambos"
+            android:onClick="onRadioButtonClicked"/>
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Qual a sua idade?"
+        android:textSize="22sp"
+        android:background="@color/vermelho"
+        android:fontFamily="@font/aladin"
+        android:textColor="@color/colorAccent"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/menos30HuggiesTroca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menos que 30 anos"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/de30a40HuggiesTroca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 a 40"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/de40a50HuggiesTroca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40 a 50"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/de50a60HuggiesTroca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50 a 60"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/mais60HuggiesTroca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mais que 60 anos"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Nível de absorção procurada:"
+        android:textSize="22sp"
+        android:background="@color/vermelho"
+        android:fontFamily="@font/aladin"
+        android:textColor="@color/colorAccent"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/trocaMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Média"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/trocaAlta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alta"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:text=" Você procura por produtos para cabelo?"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/vermelho"
+        android:fontFamily="@font/aladin"
+        android:textColor="@color/colorAccent"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/cabeloSim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sim"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/cabeloNao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:text=" Você procura produtos para cabelos cacheados?"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/vermelho"
+        android:fontFamily="@font/aladin"
+        android:textColor="@color/colorAccent"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/cacheadoSim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sim"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/cacheadoNao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <Button
+        android:text="Resultado"
+        android:id="@+id/btnResultadoHuggiesTroca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/vermelho1"
+        android:textColor="@color/branco"
+        android:fontFamily="@font/aladin"
+        android:textSize="15sp"/>
+
+</LinearLayout>

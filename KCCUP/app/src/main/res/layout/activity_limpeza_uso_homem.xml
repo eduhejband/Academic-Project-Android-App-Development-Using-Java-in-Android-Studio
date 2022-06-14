@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guiab.kccup.LimpezaUsoHomem"
+    android:background="@drawable/cor1">
+
+    <TextView
+        android:id="@+id/btnUso"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+
+        android:fontFamily="@font/aladin"
+        android:gravity="center"
+        android:text="Qual tipo de produto você procura?"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnUsoHomem"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="255dp"
+        android:background="@color/azul1"
+        android:text="Uso"
+        android:textColor="@color/branco"
+        android:fontFamily="@font/aladin"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnLimpezHomem"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="179dp"
+        android:background="@color/azul1"
+        android:text="Limpeza"
+        android:textColor="@color/branco"
+        android:fontFamily="@font/aladin"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
